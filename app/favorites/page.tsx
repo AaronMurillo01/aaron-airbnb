@@ -23,9 +23,12 @@ const ListingPage = async () => {
 
   return (
     <ClientOnly>
-      <FavoritesClient listings={listings} currentUser={currentUser} />
+      <FavoritesClient
+        listings={listings}
+        currentUser={currentUser}
+      />
     </ClientOnly>
   );
-};
-
+}
+ 
 export default ListingPage;
